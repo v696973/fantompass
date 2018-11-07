@@ -27,7 +27,6 @@ The latter problem can be solved by using master password.  A combination of mas
 Enter your master password (no characters will be shown): 
 >>> hostname = 'website'
 >>> login = 'login'
->>> password = sha256((hostname + login).encode('utf-8')).hexdigest()
 >>> password = sha256((master_password + hostname + login).encode('utf-8')).hexdigest()
 >>> print(password)
 68d62c85dc2d3ab092252efed524d441523dab24a2ca7f199adbe7a0d4c07ca2
